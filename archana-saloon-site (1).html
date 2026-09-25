@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Archana Saloon | Dibrugarh</title>
+<meta name="description" content="Archana Saloon in Naliapool, Dibrugarh. Ladies and gents services. Book your appointment online.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFC700;--bg:#FFFCEB;--card:#fff;--ink:#181818;--mute:#6d6748;--line:#eadfae;--err:#c62828;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0e;--card:#1b1b1b;--ink:#f6f1dc;--mute:#aaa48a;--line:#333;--err:#ff7b72}}
+:root[data-theme="dark"]{--bg:#0e0e0e;--card:#1b1b1b;--ink:#f6f1dc;--mute:#aaa48a;--line:#333;--err:#ff7b72}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#000;color:var(--y)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.logo{font:400 20px 'Archivo Black',sans-serif;text-decoration:none}
+nav{display:flex;gap:16px;font-weight:700;font-size:14px}
+nav a{text-decoration:none;padding:6px 2px}nav a:hover{text-decoration:underline}
+.pole{height:12px;background:repeating-linear-gradient(-45deg,var(--y) 0 12px,#000 12px 24px)}
+.hero{background:#000;color:#fff;padding:64px 0 56px}
+.hero h1{font-size:clamp(38px,8vw,72px);color:var(--y);max-width:12ch}
+.hero p{max-width:46ch;font-size:18px;color:#ddd;margin:18px 0 26px}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;background:var(--y);color:#000;font:400 16px 'Archivo Black',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.line{background:transparent;color:#fff;border:2px solid #fff;margin-left:8px}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,.mini:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+section{padding:56px 0}
+h2{font-size:clamp(26px,5vw,38px);margin-bottom:8px}
+.sub{color:var(--mute);margin:0 0 26px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.panel{border:2px solid var(--line);background:var(--card);border-radius:16px;padding:20px}
+.panel.k{background:#000;color:#fff;border-color:#000}.panel.k h3{color:var(--y)}
+.panel h3{font-size:22px;margin-bottom:8px}
+.svc{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-top:1px solid var(--line)}
+.panel.k .svc{border-color:#333}
+.svc small{display:block;color:var(--mute)}.panel.k .svc small{color:#aaa}
+.price{font:400 17px 'Archivo Black',sans-serif;white-space:nowrap}
+.mini{padding:8px 14px;border-radius:9px;border:0;background:var(--y);color:#000;font:700 14px 'DM Sans';cursor:pointer}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .full{grid-column:1/-1}
+@media(max-width:600px){form{grid-template-columns:1fr}.btn.line{margin:10px 0 0}}
+label{display:block;font-weight:700;margin-bottom:5px}
+input,select{width:100%;padding:13px;border:2px solid var(--line);border-radius:10px;font:inherit;background:var(--card);color:var(--ink)}
+.tag{margin-left:8px;padding:2px 9px;border-radius:99px;background:#000;color:var(--y);font:700 12px 'DM Sans',sans-serif;vertical-align:middle;white-space:nowrap}
+.err{color:var(--err);font-weight:700;min-height:1.4em;margin:0}
+#out{margin-top:18px;border:2px dashed var(--ink);border-radius:14px;padding:18px;background:var(--bg)}
+#out[hidden]{display:none}
+#out pre{white-space:pre-wrap;font:inherit;margin:10px 0}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+footer{background:#000;color:#bbb;padding:26px 0;text-align:center;font-size:14px}
+
+.hero{background:radial-gradient(circle at 72% 45%,rgba(255,199,0,.28),transparent 55%),#000;overflow:hidden}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:10px;align-items:center}
+.hero h1{max-width:none;text-shadow:1px 1px 0 #b38b00,2px 2px 0 #a67d00,3px 3px 0 #997200,4px 4px 0 #8a6800,5px 5px 12px rgba(0,0,0,.6)}
+#stage{height:460px;min-width:0;cursor:grab}
+#stage canvas{display:block;width:100%!important;height:100%!important}
+@media(max-width:760px){.hg{grid-template-columns:1fr}#stage{height:340px}}
+.btn{box-shadow:0 5px 0 #a87f00;transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 #a87f00}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #a87f00}
+.btn.line{box-shadow:0 5px 0 #555}
+.gh{font-size:20px;margin:26px 0 14px}.gh:first-of-type{margin-top:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;perspective:1000px}
+.card3{transform-style:preserve-3d;transition:transform .18s ease-out,box-shadow .18s;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 0 var(--y),0 18px 30px rgba(0,0,0,.18);will-change:transform}
+.card3>*{transform:translateZ(26px)}
+.card3.k{background:#000;color:#fff;border-color:#000;box-shadow:0 8px 0 var(--y),0 18px 30px rgba(0,0,0,.35)}
+.card3 b{font-size:18px;display:block}.card3 small{color:var(--mute)}.card3.k small{color:#bbb}
+.card3 .price{display:block;margin:10px 0 14px;font-size:22px}
+.card3.k .price{color:var(--y)}
+.js .rv{opacity:0;transform:translateY(34px) rotateX(-14deg);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+.panel,form{box-shadow:0 8px 0 var(--line)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+</style></head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">Archana Saloon</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#book">Book</a><a href="#visit">Visit</a></nav></div></header>
+
+<main id="top">
+<div class="pole"></div>
+<div class="hero"><div class="wrap hg"><div>
+<h1>Look sharp.<br>Skip the wait.</h1>
+<p>Hair and beauty care for ladies and gents in Naliapool, Dibrugarh. Choose your service and time online, and we'll have your chair ready.</p>
+<a class="btn" href="#book">Book an appointment</a><a class="btn line" href="#services">See services</a>
+</div><div id="stage" aria-hidden="true"></div></div></div>
+<div class="pole"></div>
+
+<section id="services"><div class="wrap">
+<h2>Services</h2><p class="sub">Tap Book on any service to start your request.</p>
+<h3 class="gh rv">Ladies</h3><div class="cards" id="ladies"></div><h3 class="gh rv">Gents</h3><div class="cards" id="gents"></div>
+</div></section>
+
+<section id="book" style="background:var(--card)"><div class="wrap">
+<h2>Book an appointment</h2><p class="sub">Open 9:00 AM to 9:00 PM, closed on Tuesdays. Send your request and the salon will confirm your slot.</p>
+<form id="f" novalidate>
+<div class="full"><label for="svc">Service</label><select id="svc" required></select></div>
+<div><label for="date">Date <span class="tag">Tuesday closed</span></label><input id="date" type="date" required></div>
+<div><label for="time">Time</label><select id="time" required></select></div>
+<div><label for="name">Your name</label><input id="name" autocomplete="name" required></div>
+<div><label for="phone">Phone number</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+<p class="err full" id="err" role="alert"></p>
+<div class="full"><button class="btn" type="submit">Request appointment</button></div>
+</form>
+<div id="out" hidden></div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+<h2>Visit us</h2><p class="sub">Walk in during opening hours, or book ahead to skip the wait.</p>
+<div class="cols"><div class="panel"><h3>Hours</h3>
+<div class="row"><span>Wednesday to Monday</span><b>9:00 AM to 9:00 PM</b></div><div class="row"><span>Tuesday</span><b>Closed</b></div></div>
+<div class="panel"><h3>Address</h3><p style="margin:0 0 12px"><b>Archana Saloon</b><br>Shop No. 28, A.T. Road, Vivekananda Pally, Naliapool, Dibrugarh, Assam 786001</p>
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Archana+Saloon+A.T.+Road+Naliapool+Dibrugarh+Assam+786001">Open in Google Maps</a></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© Archana Saloon, Naliapool, Dibrugarh</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// Set the salon's WhatsApp number with country code, digits only, e.g. '919876543210'.
+// While empty, the request is shown as text the customer can copy and send.
+const PHONE='919101726714';
+const SV=[['Hair Spa','Ladies',1200,60],['Pedicure','Ladies',800,45],['Manicure','Ladies',600,40],['Straightening','Ladies',3500,120],
+['Haircut','Gents',300,30],['Beard Setting','Gents',200,20],['Head Massage','Gents',400,30],['Hair Color','Gents',900,60]]; // placeholder prices in INR
+const $=id=>document.getElementById(id), pad=n=>String(n).padStart(2,'0');
+const rs=n=>'₹'+n.toLocaleString('en-IN'), hr=h=>`${h%12||12}:00 ${h<12?'AM':'PM'}`;
+const key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const isTue=k=>new Date(k+'T00:00:00').getDay()===2;
+
+SV.forEach(([n,c,p,m])=>{
+  $(c.toLowerCase()).insertAdjacentHTML('beforeend',`<div class="card3 rv ${c=='Gents'?'k':''}"><b>${n}</b><small>${m} min</small><span class="price">${rs(p)}</span><button class="mini" type="button" data-s="${n}">Book</button></div>`);
+});
+$('svc').innerHTML='<option value="">Choose a service</option>'+['Ladies','Gents'].map(c=>`<optgroup label="${c}">${SV.filter(s=>s[1]==c).map(s=>`<option value="${s[0]}">${s[0]} (${rs(s[2])})</option>`).join('')}</optgroup>`).join('');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b){$('svc').value=b.dataset.s;location.hash='#book';$('svc').focus({preventScroll:true})}});
+
+$('date').min=key(new Date());
+function times(){const k=$('date').value,now=new Date();let o='<option value="">Choose a time</option>';
+  for(let h=9;h<=20;h++){const past=k===key(now)&&h<=now.getHours();o+=`<option value="${h}" ${past?'disabled':''}>${hr(h)}</option>`}
+  $('time').innerHTML=o}
+times();
+$('date').addEventListener('change',()=>{const k=$('date').value;
+  if(k&&isTue(k)){$('err').textContent='The salon is closed on Tuesdays. Please pick another day.';$('date').value=''}else $('err').textContent='';times()});
+
+$('f').addEventListener('submit',e=>{e.preventDefault();
+  const s=$('svc').value,d=$('date').value,t=$('time').value,n=$('name').value.trim(),p=$('phone').value.trim();
+  const say=m=>{$('err').textContent=m};
+  if(!s||!d||!t||!n||!p)return say('Please fill in every field.');
+  if(isTue(d))return say('The salon is closed on Tuesdays.');
+  if(!/^[+\d][\d\s-]{7,14}$/.test(p))return say('Enter a valid phone number.');
+  say('');
+  const dl=new Date(d+'T00:00:00').toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'});
+  const msg=`Hello Archana Saloon, I'd like to book ${s} on ${dl} at ${hr(+t)}.\nName: ${n}\nPhone: ${p}`;
+  const o=$('out');o.hidden=false;
+  o.innerHTML=`<h3 style="font-size:20px">Your request is ready</h3>`+(PHONE
+    ?`<p>Send it on WhatsApp. The salon will reply to confirm your slot.</p><pre></pre><a class="btn" target="_blank" rel="noopener" href="https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}">Send on WhatsApp</a>`
+    :`<p>Copy this message and send it to the salon. They will reply to confirm your slot.</p><pre></pre><button class="btn" type="button" id="cp">Copy message</button>`);
+  o.querySelector('pre').textContent=msg;
+  const cp=$('cp');if(cp)cp.onclick=()=>navigator.clipboard?.writeText(msg).then(()=>cp.textContent='Copied',()=>cp.textContent='Select and copy the text above');
+  o.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+
+document.documentElement.classList.add('js');
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv,.panel,form').forEach(el=>{el.classList.add('rv');io.observe(el)});
+// card tilt
+if(!still)document.querySelectorAll('.card3').forEach(c=>{
+  c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    c.style.transition='transform .05s';c.style.transform=`rotateY(${x*16}deg) rotateX(${-y*16}deg) translateY(-4px)`});
+  c.addEventListener('pointerleave',()=>{c.style.transition='';c.style.transform=''});
+});
+// 3D barber pole
+(function(){
+  const box=$('stage');if(!window.THREE)return;
+  let R;try{R=new THREE.WebGLRenderer({antialias:true,alpha:true})}catch(e){box.style.display='none';return}
+  R.setPixelRatio(Math.min(devicePixelRatio,2));box.appendChild(R.domElement);
+  const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(38,1,.1,100);C.position.set(0,0,12);
+  S.add(new THREE.AmbientLight(0xffffff,.75));
+  const d=new THREE.DirectionalLight(0xfff0b0,1.3);d.position.set(4,6,7);S.add(d);
+  const p=new THREE.PointLight(0xffc700,1.6,40);p.position.set(-6,-2,5);S.add(p);
+  const cv=document.createElement('canvas');cv.width=cv.height=256;const g=cv.getContext('2d');
+  for(let i=-2;i<6;i++){g.fillStyle=i%2?'#FFC700':'#111';g.beginPath();g.moveTo(0,i*64);g.lineTo(256,i*64+128);g.lineTo(256,i*64+192);g.lineTo(0,i*64+64);g.fill()}
+  const tex=new THREE.CanvasTexture(cv);tex.wrapS=tex.wrapT=THREE.RepeatWrapping;tex.repeat.set(1,4);
+  const gold=new THREE.MeshStandardMaterial({color:0xffc94a,metalness:.55,roughness:.3});
+  const G=new THREE.Group();S.add(G);
+  const pole=new THREE.Mesh(new THREE.CylinderGeometry(1,1,6,48),new THREE.MeshStandardMaterial({map:tex,roughness:.4}));G.add(pole);
+  G.add(new THREE.Mesh(new THREE.CylinderGeometry(1.08,1.08,6.05,48),new THREE.MeshStandardMaterial({color:0xffffff,transparent:true,opacity:.16,roughness:.05})));
+  [3.2,-3.2].forEach(y=>{const m=new THREE.Mesh(new THREE.CylinderGeometry(1.25,1.25,.5,48),gold);m.position.y=y;G.add(m)});
+  const ball=new THREE.Mesh(new THREE.SphereGeometry(.62,32,32),gold);ball.position.y=3.85;G.add(ball);
+  G.rotation.z=.22;
+  const sh=[];for(let i=0;i<16;i++){
+    const m=new THREE.Mesh(new THREE.OctahedronGeometry(.15+Math.random()*.22),new THREE.MeshStandardMaterial({color:i%3?0xffc700:0x222222,metalness:.5,roughness:.35,flatShading:true}));
+    sh.push({m,a:Math.random()*6.28,r:2.8+Math.random()*2,y:(Math.random()-.5)*7,s:.15+Math.random()*.3,b:Math.random()*6});S.add(m)}
+  let mx=0,my=0,tx=0,ty=0;
+  addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+  function fit(){const w=box.clientWidth,h=box.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+  new ResizeObserver(fit).observe(box);fit();
+  let on=true,t=0;
+  new IntersectionObserver(e=>{on=e[0].isIntersecting;if(on&&!still)loop()}).observe(box);
+  function draw(){
+    tx+=(mx*.9-tx)*.06;ty+=(my*.5-ty)*.06;G.rotation.y=tx;G.rotation.x=ty;
+    sh.forEach(o=>{o.m.position.set(Math.cos(o.a+t*o.s)*o.r,o.y+Math.sin(t+o.b)*.3,Math.sin(o.a+t*o.s)*o.r);o.m.rotation.x+=.01;o.m.rotation.y+=.014});
+    R.render(S,C)}
+  function loop(){if(!on)return;t+=.012;tex.offset.y-=.006;draw();requestAnimationFrame(loop)}
+  still?draw():loop();
+})();
+</script></body></html>
